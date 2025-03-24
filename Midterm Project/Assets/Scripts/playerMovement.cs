@@ -41,7 +41,7 @@ public class playerMovement : MonoBehaviour
         Vector3 playerLook = MainCamera.transform.TransformDirection(Vector3.forward);
         Debug.DrawRay(transform.position, playerLook * 3f, Color.magenta);
 
-       myLook += DeltaLook() * Time.deltaTime;
+       //myLook += DeltaLook() * Time.deltaTime;
 
         if (myLook.y > camLock)
         {
